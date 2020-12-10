@@ -13,7 +13,11 @@ after_success:
   - docker build -t jorgeyza/multi-nginx ./nginx
   - docker build -t jorgeyza/multi-server ./server
   - docker build -t jorgeyza/multi-worker ./worker
+<<<<<<< HEAD
   #Log in to the Docker CLI
+=======
+  #Log in to the docker CLI
+>>>>>>> 5c45bbf2ca6dd760d143314f7eede6c168a28bb2
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   #Take those images and push them to Docker Hub
   -docker push jorgeyza/multi-client
